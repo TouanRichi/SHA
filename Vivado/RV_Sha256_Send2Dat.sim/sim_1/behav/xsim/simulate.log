@@ -1,0 +1,6 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Block Memory Generator module RISC_Top_tb.CPU.data_mem.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module RISC_Top_tb.CPU.ins_mem.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Time=5605000 | SHA256 result = b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
+$finish called at time : 5605 ns : File "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top_tb.v" Line 90

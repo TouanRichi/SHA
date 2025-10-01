@@ -1,0 +1,87 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RV_Sha256_Send2Dat.srcs/sources_1/ip/ins_mem_2/sim/ins_mem.v" \
+"../../../../RV_Sha256_Send2Dat.srcs/sources_1/ip/data_mem_1/sim/data_mem.v" \
+"../../../../../Source/ALU.v" \
+"../../../../../Source/ALUControl.v" \
+"../../../../../Source/Adder.v" \
+"../../../../../Source/Adder1.v" \
+"../../../../../Source/Adder2.v" \
+"../../../../../Source/Adder3.v" \
+"../../../../../Source/Adder4.v" \
+"../../../../../Source/Adder_C.v" \
+"../../../../../Source/Adder_Sha.v" \
+"../../../../../Source/Adder_U.v" \
+"../../../../../Source/Buffer.v" \
+"../../../../../Source/Buffer_temp.v" \
+"../../../../../Source/Ch.v" \
+"../../../../../Source/ControlUnit.v" \
+"../../../../../Source/Controller.v" \
+"../../../../../Source/Counter_offset.v" \
+"../../../../../Source/Delta0.v" \
+"../../../../../Source/Delta1.v" \
+"../../../../../Source/FSM_Sha.v" \
+"../../../../../Source/Imm_Gen.v" \
+"../../../../../Source/MUX2to1_PC.v" \
+"../../../../../Source/Maj.v" \
+"../../../../../Source/Mux2to1_ALU.v" \
+"../../../../../Source/Mux2to1_WB.v" \
+"../../../../../Source/Mux32.v" \
+"../../../../../Source/Mux_AES1.v" \
+"../../../../../Source/Mux_AES2.v" \
+"../../../../../Source/Mux_Buffer.v" \
+"../../../../../Source/Mux_J1.v" \
+"../../../../../Source/Mux_J2.v" \
+"../../../../../Source/Mux_U1_type.v" \
+"../../../../../Source/Mux_U2_type.v" \
+"../../../../../Source/Mux_data.v" \
+"../../../../../Source/Mux_ins.v" \
+"../../../../../Source/Mux_res_sha.v" \
+"../../../../../Source/PC.v" \
+"../../../../../Source/Parise_mux.v" \
+"../../../../../Source/Plus_4.v" \
+"../../../../../Source/Reg0.v" \
+"../../../../../Source/Reg1.v" \
+"../../../../../Source/Reg10.v" \
+"../../../../../Source/Reg11.v" \
+"../../../../../Source/Reg12.v" \
+"../../../../../Source/Reg13.v" \
+"../../../../../Source/Reg14.v" \
+"../../../../../Source/Reg15.v" \
+"../../../../../Source/Reg1_Sha.v" \
+"../../../../../Source/Reg2.v" \
+"../../../../../Source/Reg2_Sha.v" \
+"../../../../../Source/Reg3.v" \
+"../../../../../Source/Reg32.v" \
+"../../../../../Source/Reg3_Sha.v" \
+"../../../../../Source/Reg4.v" \
+"../../../../../Source/Reg4_Sha.v" \
+"../../../../../Source/Reg5.v" \
+"../../../../../Source/Reg6.v" \
+"../../../../../Source/Reg7.v" \
+"../../../../../Source/Reg8.v" \
+"../../../../../Source/Reg9.v" \
+"../../../../../Source/RegI.v" \
+"../../../../../Source/Reg_A.v" \
+"../../../../../Source/Reg_B.v" \
+"../../../../../Source/Reg_C.v" \
+"../../../../../Source/Reg_D.v" \
+"../../../../../Source/Reg_E.v" \
+"../../../../../Source/Reg_F.v" \
+"../../../../../Source/Reg_G.v" \
+"../../../../../Source/Reg_H.v" \
+"../../../../../Source/Reg_J.v" \
+"../../../../../Source/Reg_K.v" \
+"../../../../../Source/Reg_res256.v" \
+"../../../../../Source/Registers_file.v" \
+"../../../../../Source/Sigma0.v" \
+"../../../../../Source/Sigma1.v" \
+"../../../../../Source/Top.v" \
+"../../../../../Source/wr_b2data.v" \
+"../../../../../Source/Top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

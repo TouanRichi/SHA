@@ -1,0 +1,895 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Sep 21 09:54:37 2025
+# Process ID: 14640
+# Current directory: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31472 C:\Users\Dat Pham\Downloads\RV_Sha245_SendtoDat\Vivado\RV_Sha256_Send2Dat.xpr
+# Log file: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/vivado.log
+# Journal file: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Research_Hung/Temp/RV_Sha256_Send2Dat' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1060.977 ; gain = 0.000
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'RISC_Top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RISC_Top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/ins_mem_2/sim/ins_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ins_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/data_mem_1/sim/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol A_temp, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALU.v:57]
+INFO: [VRFC 10-2458] undeclared symbol B_temp, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALU.v:58]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Sha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_U.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_U
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Buffer_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Buffer32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Ch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Counter_offset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_offset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Delta0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Delta1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_controller
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:93]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:94]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:95]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:96]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:97]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:98]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:99]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:100]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:101]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:102]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:103]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:104]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:105]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:106]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:107]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:108]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:124]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:125]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:126]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:127]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:128]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:129]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:130]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:131]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:132]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:133]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:134]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:135]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:136]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:137]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:138]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:139]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:153]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:154]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:155]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:156]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:157]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:158]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:159]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:160]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:161]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:162]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:163]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:164]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:165]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:166]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:167]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:168]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Imm_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmediateGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/MUX2to1_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Maj.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Majority
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux2to1_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux2to1_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux32_2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_AES1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_AES1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_AES2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_AES2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_Buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_Buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_J1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_J1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_J2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_J2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_U1_type.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_U1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_U2_type.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_U2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_ins.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_ins_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_res_sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3to1_512bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Parise_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pairwise_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Plus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_plus4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register0_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register10_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register11_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register12_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register13_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register14_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register15_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg1_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg2_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg3_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register3_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg4_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register4_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register5_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register6_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register7_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register8_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register9_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/RegI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerI_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerA_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerB_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerC_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerD_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_E.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerE_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_F.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerF_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_G.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerG_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_H.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerH_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_J.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerJ_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_K.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module K_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_res256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_res_sha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Registers_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Sigma0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sigma0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Sigma1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sigma1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_Top
+INFO: [VRFC 10-2458] undeclared symbol sel_mux_res_sha_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:168]
+INFO: [VRFC 10-2458] undeclared symbol start_sha_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:169]
+INFO: [VRFC 10-2458] undeclared symbol sel_mux_res_sha_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:198]
+INFO: [VRFC 10-2458] undeclared symbol start_sha_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:199]
+INFO: [VRFC 10-2458] undeclared symbol sel_mux_res_sha_w3, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:257]
+INFO: [VRFC 10-2458] undeclared symbol start_sha_w3, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:258]
+WARNING: [VRFC 10-2938] 'sel_mux_res_sha_w' is already implicitly declared on line 168 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:326]
+WARNING: [VRFC 10-2938] 'sel_mux_res_sha_w2' is already implicitly declared on line 198 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:327]
+WARNING: [VRFC 10-2938] 'sel_mux_res_sha_w3' is already implicitly declared on line 257 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:328]
+WARNING: [VRFC 10-2938] 'start_sha_w' is already implicitly declared on line 169 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:330]
+WARNING: [VRFC 10-2938] 'start_sha_w2' is already implicitly declared on line 199 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:331]
+WARNING: [VRFC 10-2938] 'start_sha_w3' is already implicitly declared on line 258 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:332]
+INFO: [VRFC 10-2458] undeclared symbol res_mux_sha_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:787]
+INFO: [VRFC 10-2458] undeclared symbol done_Sha_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:788]
+WARNING: [VRFC 10-2938] 'done_Sha_w' is already implicitly declared on line 788 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1056]
+INFO: [VRFC 10-2458] undeclared symbol reg_H_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1073]
+INFO: [VRFC 10-2458] undeclared symbol data_o_reg32_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1247]
+INFO: [VRFC 10-2458] undeclared symbol data_o_adder4_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1250]
+INFO: [VRFC 10-2458] undeclared symbol reg_A_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1252]
+INFO: [VRFC 10-2458] undeclared symbol reg_B_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1254]
+INFO: [VRFC 10-2458] undeclared symbol reg_C_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1256]
+INFO: [VRFC 10-2458] undeclared symbol data_o_adder3_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1258]
+INFO: [VRFC 10-2458] undeclared symbol reg_E_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1260]
+INFO: [VRFC 10-2458] undeclared symbol reg_F_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1262]
+INFO: [VRFC 10-2458] undeclared symbol reg_G_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1264]
+WARNING: [VRFC 10-2938] 'reg_A_o_w' is already implicitly declared on line 1252 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1276]
+WARNING: [VRFC 10-2938] 'reg_B_o_w' is already implicitly declared on line 1254 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1285]
+WARNING: [VRFC 10-2938] 'reg_C_o_w' is already implicitly declared on line 1256 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1294]
+WARNING: [VRFC 10-2938] 'reg_E_o_w' is already implicitly declared on line 1260 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1312]
+WARNING: [VRFC 10-2938] 'reg_F_o_w' is already implicitly declared on line 1262 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1321]
+WARNING: [VRFC 10-2938] 'reg_G_o_w' is already implicitly declared on line 1264 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1330]
+WARNING: [VRFC 10-2938] 'reg_H_o_w' is already implicitly declared on line 1073 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1339]
+WARNING: [VRFC 10-2938] 'data_o_adder3_w' is already implicitly declared on line 1258 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1371]
+WARNING: [VRFC 10-2938] 'data_o_adder4_w' is already implicitly declared on line 1250 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1395]
+WARNING: [VRFC 10-2938] 'data_o_reg32_w' is already implicitly declared on line 1247 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1441]
+WARNING: [VRFC 10-2938] 'res_mux_sha_o_w' is already implicitly declared on line 787 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1565]
+WARNING: [VRFC 10-3380] identifier 'res_sha256_w' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/wr_b2data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wr_b2data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_Top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1060.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '14' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+"xelab -wto 90a145a0e63f463aafc0ff6167e575d8 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RISC_Top_tb_behav xil_defaultlib.RISC_Top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 90a145a0e63f463aafc0ff6167e575d8 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RISC_Top_tb_behav xil_defaultlib.RISC_Top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'clkb' is not connected on this instance [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [VRFC 10-5021] port 'clkb' is not connected on this instance [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_plus4
+Compiling module xil_defaultlib.Reg1
+Compiling module xil_defaultlib.Reg2
+Compiling module xil_defaultlib.Reg3
+Compiling module xil_defaultlib.Reg4
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers_file
+Compiling module xil_defaultlib.ImmediateGenerator
+Compiling module xil_defaultlib.MUX2to1_ALU
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mux_U1
+Compiling module xil_defaultlib.Adder_U
+Compiling module xil_defaultlib.Mux_J1
+Compiling module xil_defaultlib.MUX2to1_PC
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.mux_data_mem
+Compiling module xil_defaultlib.mux_ins_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.ins_mem
+Compiling module xil_defaultlib.Mux_J2
+Compiling module xil_defaultlib.MUX2to1_WB
+Compiling module xil_defaultlib.Mux_U2
+Compiling module xil_defaultlib.counter_offset
+Compiling module xil_defaultlib.adder_32bit
+Compiling module xil_defaultlib.Mux_Buffer
+Compiling module xil_defaultlib.buffer
+Compiling module xil_defaultlib.Buffer32
+Compiling module xil_defaultlib.wr_b2data
+Compiling module xil_defaultlib.MUX_AES1
+Compiling module xil_defaultlib.MUX_AES2
+Compiling module xil_defaultlib.state_control
+Compiling module xil_defaultlib.fsm_controller
+Compiling module xil_defaultlib.mux32_2to1
+Compiling module xil_defaultlib.register0_32bit
+Compiling module xil_defaultlib.register1_32bit
+Compiling module xil_defaultlib.register2_32bit
+Compiling module xil_defaultlib.register3_32bit
+Compiling module xil_defaultlib.register4_32bit
+Compiling module xil_defaultlib.register5_32bit
+Compiling module xil_defaultlib.register6_32bit
+Compiling module xil_defaultlib.register7_32bit
+Compiling module xil_defaultlib.register8_32bit
+Compiling module xil_defaultlib.register9_32bit
+Compiling module xil_defaultlib.register10_32bit
+Compiling module xil_defaultlib.register11_32bit
+Compiling module xil_defaultlib.register12_32bit
+Compiling module xil_defaultlib.register13_32bit
+Compiling module xil_defaultlib.register14_32bit
+Compiling module xil_defaultlib.register15_32bit
+Compiling module xil_defaultlib.delta0
+Compiling module xil_defaultlib.delta1
+Compiling module xil_defaultlib.Adder_Sha
+Compiling module xil_defaultlib.K_register
+Compiling module xil_defaultlib.Adder1
+Compiling module xil_defaultlib.pairwise_mux
+Compiling module xil_defaultlib.registerA_32bit
+Compiling module xil_defaultlib.registerB_32bit
+Compiling module xil_defaultlib.registerC_32bit
+Compiling module xil_defaultlib.registerD_32bit
+Compiling module xil_defaultlib.registerE_32bit
+Compiling module xil_defaultlib.registerF_32bit
+Compiling module xil_defaultlib.registerG_32bit
+Compiling module xil_defaultlib.registerH_32bit
+Compiling module xil_defaultlib.Choice
+Compiling module xil_defaultlib.Sigma1
+Compiling module xil_defaultlib.Adder2
+Compiling module xil_defaultlib.Adder3
+Compiling module xil_defaultlib.Majority
+Compiling module xil_defaultlib.Sigma0
+Compiling module xil_defaultlib.Adder4
+Compiling module xil_defaultlib.registerI_32bit
+Compiling module xil_defaultlib.registerJ_32bit
+Compiling module xil_defaultlib.register_32bit
+Compiling module xil_defaultlib.Reg_res_sha
+Compiling module xil_defaultlib.mux_3to1_512bit
+Compiling module xil_defaultlib.RISC_Top
+Compiling module xil_defaultlib.RISC_Top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RISC_Top_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Dat -notrace
+WARNING: [Common 17-259] Unknown Tcl command 'lmutil - Copyright (c) 1989-2021 Flexera. All Rights Reserved.' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+invalid command name "lmutil"
+    while executing
+"lmutil - Copyright (c) 1989-2021 Flexera. All Rights Reserved."
+    (file "C:/Users/Dat" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 21 10:06:13 2025...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1060.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RISC_Top_tb_behav -key {Behavioral:sim_1:Functional:RISC_Top_tb} -tclbatch {RISC_Top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source RISC_Top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/RISC_Top_tb/Inst_ROM" to the wave window because it has 65600 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/RISC_Top_tb/Data_RAM" to the wave window because it has 65600 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+Block Memory Generator module RISC_Top_tb.CPU.data_mem.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module RISC_Top_tb.CPU.ins_mem.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: File D:\Research_Hung\Temp\Source\C_code\Inst_ROM.txt referenced on C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top_tb.v at line 80 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: File D:\Research_Hung\Temp\Source\C_code\Data_Mem.txt referenced on C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top_tb.v at line 81 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RISC_Top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.977 ; gain = 0.000
+launch_runs synth_1 -jobs 8
+[Sun Sep 21 10:09:12 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Sep 21 10:10:30 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/impl_1/runme.log
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'RISC_Top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RISC_Top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/ins_mem_2/sim/ins_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ins_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/data_mem_1/sim/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol A_temp, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALU.v:57]
+INFO: [VRFC 10-2458] undeclared symbol B_temp, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALU.v:58]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Sha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_U.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_U
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Buffer_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Buffer32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Ch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Counter_offset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_offset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Delta0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Delta1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_controller
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:93]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:94]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:95]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:96]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:97]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:98]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:99]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:100]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:101]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:102]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:103]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:104]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:105]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:106]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:107]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:108]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:124]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:125]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:126]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:127]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:128]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:129]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:130]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:131]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:132]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:133]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:134]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:135]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:136]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:137]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:138]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:139]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:153]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:154]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:155]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:156]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:157]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:158]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:159]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:160]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:161]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:162]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:163]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:164]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:165]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:166]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:167]
+WARNING: [VRFC 10-3380] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:168]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Imm_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmediateGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/MUX2to1_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Maj.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Majority
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux2to1_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux2to1_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2to1_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux32_2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_AES1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_AES1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_AES2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_AES2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_Buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_Buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_J1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_J1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_J2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_J2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_U1_type.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_U1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_U2_type.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_U2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_ins.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_ins_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_res_sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3to1_512bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Parise_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pairwise_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Plus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_plus4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register0_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register10_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register11_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register12_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register13_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register14_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register15_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg1_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg2_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg3_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register3_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg4_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register4_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register5_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register6_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register7_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register8_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register9_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/RegI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerI_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerA_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerB_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerC_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerD_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_E.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerE_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_F.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerF_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_G.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerG_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_H.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerH_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_J.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerJ_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_K.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module K_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_res256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_res_sha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Registers_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Sigma0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sigma0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Sigma1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sigma1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_Top
+INFO: [VRFC 10-2458] undeclared symbol sel_mux_res_sha_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:168]
+INFO: [VRFC 10-2458] undeclared symbol start_sha_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:169]
+INFO: [VRFC 10-2458] undeclared symbol sel_mux_res_sha_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:198]
+INFO: [VRFC 10-2458] undeclared symbol start_sha_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:199]
+INFO: [VRFC 10-2458] undeclared symbol sel_mux_res_sha_w3, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:257]
+INFO: [VRFC 10-2458] undeclared symbol start_sha_w3, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:258]
+WARNING: [VRFC 10-2938] 'sel_mux_res_sha_w' is already implicitly declared on line 168 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:326]
+WARNING: [VRFC 10-2938] 'sel_mux_res_sha_w2' is already implicitly declared on line 198 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:327]
+WARNING: [VRFC 10-2938] 'sel_mux_res_sha_w3' is already implicitly declared on line 257 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:328]
+WARNING: [VRFC 10-2938] 'start_sha_w' is already implicitly declared on line 169 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:330]
+WARNING: [VRFC 10-2938] 'start_sha_w2' is already implicitly declared on line 199 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:331]
+WARNING: [VRFC 10-2938] 'start_sha_w3' is already implicitly declared on line 258 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:332]
+INFO: [VRFC 10-2458] undeclared symbol res_mux_sha_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:787]
+INFO: [VRFC 10-2458] undeclared symbol done_Sha_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:788]
+WARNING: [VRFC 10-2938] 'done_Sha_w' is already implicitly declared on line 788 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1056]
+INFO: [VRFC 10-2458] undeclared symbol reg_H_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1073]
+INFO: [VRFC 10-2458] undeclared symbol data_o_reg32_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1247]
+INFO: [VRFC 10-2458] undeclared symbol data_o_adder4_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1250]
+INFO: [VRFC 10-2458] undeclared symbol reg_A_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1252]
+INFO: [VRFC 10-2458] undeclared symbol reg_B_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1254]
+INFO: [VRFC 10-2458] undeclared symbol reg_C_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1256]
+INFO: [VRFC 10-2458] undeclared symbol data_o_adder3_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1258]
+INFO: [VRFC 10-2458] undeclared symbol reg_E_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1260]
+INFO: [VRFC 10-2458] undeclared symbol reg_F_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1262]
+INFO: [VRFC 10-2458] undeclared symbol reg_G_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1264]
+WARNING: [VRFC 10-2938] 'reg_A_o_w' is already implicitly declared on line 1252 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1276]
+WARNING: [VRFC 10-2938] 'reg_B_o_w' is already implicitly declared on line 1254 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1285]
+WARNING: [VRFC 10-2938] 'reg_C_o_w' is already implicitly declared on line 1256 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1294]
+WARNING: [VRFC 10-2938] 'reg_E_o_w' is already implicitly declared on line 1260 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1312]
+WARNING: [VRFC 10-2938] 'reg_F_o_w' is already implicitly declared on line 1262 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1321]
+WARNING: [VRFC 10-2938] 'reg_G_o_w' is already implicitly declared on line 1264 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1330]
+WARNING: [VRFC 10-2938] 'reg_H_o_w' is already implicitly declared on line 1073 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1339]
+WARNING: [VRFC 10-2938] 'data_o_adder3_w' is already implicitly declared on line 1258 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1371]
+WARNING: [VRFC 10-2938] 'data_o_adder4_w' is already implicitly declared on line 1250 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1395]
+WARNING: [VRFC 10-2938] 'data_o_reg32_w' is already implicitly declared on line 1247 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1441]
+WARNING: [VRFC 10-2938] 'res_mux_sha_o_w' is already implicitly declared on line 787 [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1565]
+WARNING: [VRFC 10-3380] identifier 'res_sha256_w' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/wr_b2data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wr_b2data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_Top_tb
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1060.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '14' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1060.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+"xelab -wto 90a145a0e63f463aafc0ff6167e575d8 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RISC_Top_tb_behav xil_defaultlib.RISC_Top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 90a145a0e63f463aafc0ff6167e575d8 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RISC_Top_tb_behav xil_defaultlib.RISC_Top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'clkb' is not connected on this instance [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [VRFC 10-5021] port 'clkb' is not connected on this instance [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_plus4
+Compiling module xil_defaultlib.Reg1
+Compiling module xil_defaultlib.Reg2
+Compiling module xil_defaultlib.Reg3
+Compiling module xil_defaultlib.Reg4
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.Registers_file
+Compiling module xil_defaultlib.ImmediateGenerator
+Compiling module xil_defaultlib.MUX2to1_ALU
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mux_U1
+Compiling module xil_defaultlib.Adder_U
+Compiling module xil_defaultlib.Mux_J1
+Compiling module xil_defaultlib.MUX2to1_PC
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.mux_data_mem
+Compiling module xil_defaultlib.mux_ins_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.ins_mem
+Compiling module xil_defaultlib.Mux_J2
+Compiling module xil_defaultlib.MUX2to1_WB
+Compiling module xil_defaultlib.Mux_U2
+Compiling module xil_defaultlib.counter_offset
+Compiling module xil_defaultlib.adder_32bit
+Compiling module xil_defaultlib.Mux_Buffer
+Compiling module xil_defaultlib.buffer
+Compiling module xil_defaultlib.Buffer32
+Compiling module xil_defaultlib.wr_b2data
+Compiling module xil_defaultlib.MUX_AES1
+Compiling module xil_defaultlib.MUX_AES2
+Compiling module xil_defaultlib.state_control
+Compiling module xil_defaultlib.fsm_controller
+Compiling module xil_defaultlib.mux32_2to1
+Compiling module xil_defaultlib.register0_32bit
+Compiling module xil_defaultlib.register1_32bit
+Compiling module xil_defaultlib.register2_32bit
+Compiling module xil_defaultlib.register3_32bit
+Compiling module xil_defaultlib.register4_32bit
+Compiling module xil_defaultlib.register5_32bit
+Compiling module xil_defaultlib.register6_32bit
+Compiling module xil_defaultlib.register7_32bit
+Compiling module xil_defaultlib.register8_32bit
+Compiling module xil_defaultlib.register9_32bit
+Compiling module xil_defaultlib.register10_32bit
+Compiling module xil_defaultlib.register11_32bit
+Compiling module xil_defaultlib.register12_32bit
+Compiling module xil_defaultlib.register13_32bit
+Compiling module xil_defaultlib.register14_32bit
+Compiling module xil_defaultlib.register15_32bit
+Compiling module xil_defaultlib.delta0
+Compiling module xil_defaultlib.delta1
+Compiling module xil_defaultlib.Adder_Sha
+Compiling module xil_defaultlib.K_register
+Compiling module xil_defaultlib.Adder1
+Compiling module xil_defaultlib.pairwise_mux
+Compiling module xil_defaultlib.registerA_32bit
+Compiling module xil_defaultlib.registerB_32bit
+Compiling module xil_defaultlib.registerC_32bit
+Compiling module xil_defaultlib.registerD_32bit
+Compiling module xil_defaultlib.registerE_32bit
+Compiling module xil_defaultlib.registerF_32bit
+Compiling module xil_defaultlib.registerG_32bit
+Compiling module xil_defaultlib.registerH_32bit
+Compiling module xil_defaultlib.Choice
+Compiling module xil_defaultlib.Sigma1
+Compiling module xil_defaultlib.Adder2
+Compiling module xil_defaultlib.Adder3
+Compiling module xil_defaultlib.Majority
+Compiling module xil_defaultlib.Sigma0
+Compiling module xil_defaultlib.Adder4
+Compiling module xil_defaultlib.registerI_32bit
+Compiling module xil_defaultlib.registerJ_32bit
+Compiling module xil_defaultlib.register_32bit
+Compiling module xil_defaultlib.Reg_res_sha
+Compiling module xil_defaultlib.mux_3to1_512bit
+Compiling module xil_defaultlib.RISC_Top
+Compiling module xil_defaultlib.RISC_Top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RISC_Top_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Dat -notrace
+WARNING: [Common 17-259] Unknown Tcl command 'lmutil - Copyright (c) 1989-2021 Flexera. All Rights Reserved.' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+invalid command name "lmutil"
+    while executing
+"lmutil - Copyright (c) 1989-2021 Flexera. All Rights Reserved."
+    (file "C:/Users/Dat" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 22 13:59:13 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1060.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1060.977 ; gain = 0.000
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Block Memory Generator module RISC_Top_tb.CPU.data_mem.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module RISC_Top_tb.CPU.ins_mem.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 1060.977 ; gain = 0.000
+run all
+Time=5605000 | SHA256 result = ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
+$finish called at time : 5605 ns : File "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top_tb.v" Line 90
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'RISC_Top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RISC_Top_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.sim/sim_1/behav/xsim'
+"xelab -wto 90a145a0e63f463aafc0ff6167e575d8 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RISC_Top_tb_behav xil_defaultlib.RISC_Top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 90a145a0e63f463aafc0ff6167e575d8 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RISC_Top_tb_behav xil_defaultlib.RISC_Top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'clkb' is not connected on this instance [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [VRFC 10-5021] port 'clkb' is not connected on this instance [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Block Memory Generator module RISC_Top_tb.CPU.data_mem.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module RISC_Top_tb.CPU.ins_mem.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1060.977 ; gain = 0.000
+run all
+Time=5605000 | SHA256 result = b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
+$finish called at time : 5605 ns : File "C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top_tb.v" Line 90
+set_property top RISC_Top [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Mon Sep 22 14:15:19 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 22 14:18:58 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/impl_1/runme.log
+add_files -fileset constrs_1 -norecurse {{C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc} {C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/dont_touch.xdc} {C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc}}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Mon Sep 22 20:07:14 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Sep 22 20:10:51 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 22 21:26:32 2025...

@@ -1,0 +1,854 @@
+
+*** Running vivado
+    with args -log RISC_Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISC_Top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source RISC_Top.tcl -notrace
+Command: synth_design -top RISC_Top -part xczu9eg-ffvb1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34452
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:93]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:94]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:95]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:96]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:97]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:98]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:99]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:100]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:101]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:102]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:103]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:104]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:105]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:106]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:107]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:108]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:124]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:125]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:126]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:127]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:128]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:129]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:130]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:131]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:132]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:133]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:134]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:135]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:136]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:137]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:138]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:139]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:153]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:153]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:154]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:154]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:155]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:155]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:156]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:156]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:157]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:157]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:158]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:158]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:159]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:159]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:160]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:160]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:161]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:161]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:162]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:162]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:163]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:163]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:164]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:164]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:165]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:165]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:166]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:166]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:167]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:167]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:168]
+WARNING: [Synth 8-6901] identifier 'reg16' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:168]
+WARNING: [Synth 8-992] sel_mux_res_sha_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:326]
+WARNING: [Synth 8-992] sel_mux_res_sha_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:327]
+WARNING: [Synth 8-992] sel_mux_res_sha_w3 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:328]
+WARNING: [Synth 8-992] start_sha_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:330]
+WARNING: [Synth 8-992] start_sha_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:331]
+WARNING: [Synth 8-992] start_sha_w3 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:332]
+WARNING: [Synth 8-992] done_Sha_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1056]
+WARNING: [Synth 8-992] reg_A_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1276]
+WARNING: [Synth 8-992] reg_B_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1285]
+WARNING: [Synth 8-992] reg_C_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1294]
+WARNING: [Synth 8-992] reg_E_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1312]
+WARNING: [Synth 8-992] reg_F_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1321]
+WARNING: [Synth 8-992] reg_G_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1330]
+WARNING: [Synth 8-992] reg_H_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1339]
+WARNING: [Synth 8-992] data_o_adder3_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1371]
+WARNING: [Synth 8-992] data_o_adder4_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1395]
+WARNING: [Synth 8-992] data_o_reg32_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1441]
+WARNING: [Synth 8-992] res_mux_sha_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1565]
+WARNING: [Synth 8-6901] identifier 'res_sha256_w' is used before its declaration [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:18]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1592.461 ; gain = 82.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_Top' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/PC.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/PC.v:34]
+INFO: [Synth 8-6157] synthesizing module 'PC_plus4' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Plus_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC_plus4' (2#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Plus_4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Reg1' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Reg1' (3#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Reg2' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Reg2' (4#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Reg3' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Reg3' (5#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Reg4' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Reg4' (6#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:265]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (7#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALUControl.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (8#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALUControl.v:75]
+INFO: [Synth 8-6157] synthesizing module 'Registers_file' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Registers_file.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'Registers_file' (9#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Registers_file.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ImmediateGenerator' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Imm_Gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ImmediateGenerator' (10#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Imm_Gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX2to1_ALU' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux2to1_ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2to1_ALU' (11#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux2to1_ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (12#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALU.v:45]
+	Parameter one bound to: 1 - type: integer 
+	Parameter zero_0 bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (13#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ALU.v:45]
+INFO: [Synth 8-6157] synthesizing module 'Mux_U1' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_U1_type.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_U1' (14#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_U1_type.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder_U' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_U.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_U' (15#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_U.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux_J1' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_J1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_J1' (16#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_J1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX2to1_PC' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/MUX2to1_PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2to1_PC' (17#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/MUX2to1_PC.v:1]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [c:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/data_mem_1/synth/data_mem.vhd:76]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: data_mem.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 8192 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 8192 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 8192 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 8192 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 7 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     18.363474 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/ins_mem_2/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/data_mem_1/synth/data_mem.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'data_mem' (28#1) [c:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/data_mem_1/synth/data_mem.vhd:76]
+WARNING: [Synth 8-7071] port 'clkb' of module 'data_mem' is unconnected for instance 'data_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [Synth 8-7071] port 'enb' of module 'data_mem' is unconnected for instance 'data_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [Synth 8-7071] port 'web' of module 'data_mem' is unconnected for instance 'data_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [Synth 8-7071] port 'addrb' of module 'data_mem' is unconnected for instance 'data_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [Synth 8-7071] port 'dinb' of module 'data_mem' is unconnected for instance 'data_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [Synth 8-7071] port 'doutb' of module 'data_mem' is unconnected for instance 'data_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+WARNING: [Synth 8-7023] instance 'data_mem' of module 'data_mem' has 12 connections declared, but only 6 given [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:467]
+INFO: [Synth 8-6157] synthesizing module 'mux_data_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_data.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_data_mem' (29#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_data.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_ins_rom' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_ins.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_ins_rom' (30#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_ins.v:1]
+INFO: [Synth 8-638] synthesizing module 'ins_mem' [c:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/ins_mem_2/synth/ins_mem.vhd:76]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: ins_mem.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 8192 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 8192 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 8192 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 8192 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 7 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     18.363474 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/ins_mem_2/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/ins_mem_2/synth/ins_mem.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'ins_mem' (31#1) [c:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.srcs/sources_1/ip/ins_mem_2/synth/ins_mem.vhd:76]
+WARNING: [Synth 8-7071] port 'clkb' of module 'ins_mem' is unconnected for instance 'ins_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+WARNING: [Synth 8-7071] port 'enb' of module 'ins_mem' is unconnected for instance 'ins_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+WARNING: [Synth 8-7071] port 'web' of module 'ins_mem' is unconnected for instance 'ins_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+WARNING: [Synth 8-7071] port 'addrb' of module 'ins_mem' is unconnected for instance 'ins_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+WARNING: [Synth 8-7071] port 'dinb' of module 'ins_mem' is unconnected for instance 'ins_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+WARNING: [Synth 8-7071] port 'doutb' of module 'ins_mem' is unconnected for instance 'ins_mem' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+WARNING: [Synth 8-7023] instance 'ins_mem' of module 'ins_mem' has 12 connections declared, but only 6 given [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:538]
+INFO: [Synth 8-6157] synthesizing module 'Mux_J2' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_J2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_J2' (32#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_J2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX2to1_WB' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux2to1_WB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2to1_WB' (33#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux2to1_WB.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux_U2' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_U2_type.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_U2' (34#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_U2_type.v:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_offset' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Counter_offset.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'counter_offset' (35#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Counter_offset.v:57]
+INFO: [Synth 8-6157] synthesizing module 'adder_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_C.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder_32bit' (36#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_C.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux_Buffer' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_Buffer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_Buffer' (37#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_Buffer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'buffer' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Buffer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'buffer' (38#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Buffer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Buffer32' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Buffer_temp.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Buffer32' (39#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Buffer_temp.v:18]
+INFO: [Synth 8-6157] synthesizing module 'wr_b2data' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/wr_b2data.v:1]
+	Parameter IDLE bound to: 2'b00 
+	Parameter N1 bound to: 2'b01 
+	Parameter DONE bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'wr_b2data' (40#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/wr_b2data.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX_AES1' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_AES1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_AES1' (41#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_AES1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX_AES2' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_AES2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_AES2' (42#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_AES2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'state_control' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'state_control' (43#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fsm_controller' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:1]
+	Parameter IDLE bound to: 3'b000 
+	Parameter STATE1 bound to: 3'b001 
+	Parameter STATE2 bound to: 3'b010 
+	Parameter STATE3 bound to: 3'b011 
+	Parameter STATE4 bound to: 3'b100 
+	Parameter DONE bound to: 3'b101 
+WARNING: [Synth 8-567] referenced signal 'cnt_w' should be on the sensitivity list [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:315]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_controller' (44#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/FSM_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux32_2to1' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux32_2to1' (45#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register0_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg0.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register0_32bit' (46#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg0.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register1_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg1_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register1_32bit' (47#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg1_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register2_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg2_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register2_32bit' (48#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg2_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register3_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg3_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register3_32bit' (49#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg3_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register4_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg4_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register4_32bit' (50#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg4_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register5_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register5_32bit' (51#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register6_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg6.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register6_32bit' (52#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg6.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register7_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg7.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register7_32bit' (53#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg7.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register8_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register8_32bit' (54#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register9_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg9.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register9_32bit' (55#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg9.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register10_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg10.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register10_32bit' (56#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg10.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register11_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg11.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register11_32bit' (57#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg11.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register12_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg12.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register12_32bit' (58#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg12.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register13_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg13.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register13_32bit' (59#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg13.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register14_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg14.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register14_32bit' (60#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg14.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register15_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg15.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register15_32bit' (61#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg15.v:1]
+INFO: [Synth 8-6157] synthesizing module 'delta0' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Delta0.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'delta0' (62#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Delta0.v:1]
+INFO: [Synth 8-6157] synthesizing module 'delta1' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Delta1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'delta1' (63#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Delta1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder_Sha' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_Sha' (64#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'K_register' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_K.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'K_register' (65#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_K.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder1' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder1' (66#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pairwise_mux' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Parise_mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pairwise_mux' (67#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Parise_mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'registerA_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_A.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerA_32bit' (68#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_A.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerB_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_B.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerB_32bit' (69#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_B.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerC_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_C.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerC_32bit' (70#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_C.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerD_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_D.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerD_32bit' (71#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_D.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerE_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_E.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerE_32bit' (72#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_E.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerF_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_F.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerF_32bit' (73#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_F.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerG_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_G.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerG_32bit' (74#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_G.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerH_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_H.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerH_32bit' (75#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_H.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Choice' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Ch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Choice' (76#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Ch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sigma1' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Sigma1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sigma1' (77#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Sigma1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder2' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder2' (78#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder3' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder3' (79#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Majority' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Maj.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Majority' (80#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Maj.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sigma0' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Sigma0.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sigma0' (81#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Sigma0.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder4' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder4' (82#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Adder4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerI_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/RegI.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerI_32bit' (83#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/RegI.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerJ_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_J.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerJ_32bit' (84#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_J.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register_32bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register_32bit' (85#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Reg_res_sha' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_res256.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_res_sha' (86#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Reg_res256.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mux_3to1_512bit' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_res_sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_3to1_512bit' (87#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Mux_res_sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISC_Top' (88#1) [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/Top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1852.051 ; gain = 342.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1873.445 ; gain = 363.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1873.445 ; gain = 363.926
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1885.500 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clka'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc:53]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clka]'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc:53]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'clkb'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc:55]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clkb]'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc:55]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc]
+Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/dont_touch.xdc]
+Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clka'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc:53]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clka]'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc:53]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'clkb'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc:55]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clkb]'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc:55]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc]
+Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1990.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1990.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1990.516 ; gain = 480.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1990.516 ; gain = 480.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ins_mem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for data_mem. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1990.516 ; gain = 480.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_r_reg' in module 'fsm_controller'
+WARNING: [Synth 8-327] inferring latch for variable 'branch_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_read_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_write_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_src_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_write_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'jalr_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'lui_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'auipc_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'ecall_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'plus1_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'load_temp_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'AES_W_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'key_size_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'mode_aes_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'sel_mux_res_sha_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'start_sha_reg' [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Source/ControlUnit.v:48]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                  STATE1 |                              001 |                              001
+                  STATE2 |                              010 |                              010
+                  STATE3 |                              011 |                              011
+                  STATE4 |                              100 |                              100
+                    DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_r_reg' using encoding 'sequential' in module 'fsm_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1990.516 ; gain = 480.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 14    
+	   3 Input   32 Bit       Adders := 4     
+	   4 Input   32 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   3 Input     32 Bit         XORs := 5     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 382   
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 45    
++---Muxes : 
+	   4 Input  512 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 55    
+	  33 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 1     
+	  15 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	  35 Input    5 Bit        Muxes := 1     
+	  15 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	  12 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 10    
+	   4 Input    2 Bit        Muxes := 4     
+	  15 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 180   
+	   4 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1990.516 ; gain = 480.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|K_register  | p_0_out    | 64x32         | LUT            | 
+|K_register  | p_0_out    | 64x32         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 2381.203 ; gain = 871.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2393.574 ; gain = 884.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 2467.262 ; gain = 957.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin data_mem:clkb to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:enb to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:web[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:addrb[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_mem:dinb[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:clkb to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:enb to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:web[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:addrb[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ins_mem:dinb[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2473.059 ; gain = 963.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2473.059 ; gain = 963.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 2473.059 ; gain = 963.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 2473.059 ; gain = 963.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 2473.059 ; gain = 963.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 2473.059 ; gain = 963.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|RISC_Top    | Reg6/data_o_reg[31]  | 5      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|RISC_Top    | Reg14/data_o_reg[31] | 8      | 32    | YES          | NO                 | YES               | 32     | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY8   |    80|
+|3     |LUT1     |     2|
+|4     |LUT2     |  1168|
+|5     |LUT3     |   418|
+|6     |LUT4     |   465|
+|7     |LUT5     |   461|
+|8     |LUT6     |  1370|
+|9     |MUXF7    |   288|
+|10    |MUXF8    |    64|
+|11    |RAMB18E2 |     2|
+|12    |RAMB36E2 |    14|
+|14    |SRL16E   |    64|
+|15    |FDCE     |  4087|
+|16    |FDRE     |  1095|
+|17    |LD       |    16|
+|18    |IBUF     |    93|
+|19    |OBUF     |   257|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:56 . Memory (MB): peak = 2473.059 ; gain = 963.539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 114 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:51 . Memory (MB): peak = 2473.059 ; gain = 846.469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 2473.059 ; gain = 963.539
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 2481.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 542 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2495.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 110 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 93 instances
+  LD => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+176 Infos, 216 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 2495.809 ; gain = 1422.184
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/synth_1/RISC_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RISC_Top_utilization_synth.rpt -pb RISC_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 22 20:08:33 2025...

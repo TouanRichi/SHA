@@ -1,0 +1,246 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep 22 20:10:59 2025
+# Process ID: 34736
+# Current directory: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/impl_1
+# Command line: vivado.exe -log RISC_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RISC_Top.tcl -notrace
+# Log file: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/impl_1/RISC_Top.vdi
+# Journal file: C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source RISC_Top.tcl -notrace
+Command: link_design -top RISC_Top -part xczu9eg-ffvb1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1508.957 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 525 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clka'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc:53]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clka]'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc:53]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'clkb'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc:55]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clkb]'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc:55]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/data_mem_ooc.xdc]
+Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/dont_touch.xdc]
+Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clka'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc:53]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clka]'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc:53]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'clkb'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc:55]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clkb]'. [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc:55]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/ins_mem_ooc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1508.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 93 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 93 instances
+
+7 Infos, 4 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1508.957 ; gain = 434.762
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1519.391 ; gain = 10.434
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 12354d37d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1791.000 ; gain = 271.609
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 4087 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 13230fc88
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.589 . Memory (MB): peak = 2013.086 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: f42ed7a0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.643 . Memory (MB): peak = 2013.086 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: dee7d18c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.864 . Memory (MB): peak = 2013.086 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 256 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: dee7d18c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2013.086 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: dee7d18c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2013.086 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 61e846f7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2013.086 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |             256  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2013.086 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1851fe93a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2013.086 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 16 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 32
+Ending PowerOpt Patch Enables Task | Checksum: 1851fe93a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 2659.168 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1851fe93a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2659.168 ; gain = 646.082
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1851fe93a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2659.168 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2659.168 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1851fe93a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2659.168 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2659.168 ; gain = 1150.211
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/impl_1/RISC_Top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file RISC_Top_drc_opted.rpt -pb RISC_Top_drc_opted.pb -rpx RISC_Top_drc_opted.rpx
+Command: report_drc -file RISC_Top_drc_opted.rpt -pb RISC_Top_drc_opted.pb -rpx RISC_Top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Dat Pham/Downloads/RV_Sha245_SendtoDat/Vivado/RV_Sha256_Send2Dat.runs/impl_1/RISC_Top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2659.168 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f9f0a2d6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2659.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2659.168 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (349) is greater than number of available sites (328).
+The following are banks with available pins: 
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 44 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 47 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 48 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 49 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 50 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 64 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 65 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 66 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 67 |    52 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   328 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: dbf8f800
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2659.168 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: dbf8f800
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2659.168 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: dbf8f800
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2659.168 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 5 Warnings, 4 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 22 20:11:42 2025...
