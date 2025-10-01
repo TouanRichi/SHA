@@ -21,14 +21,10 @@ module Reg2(
     input [31:0] imm1_in,
     input ecall_in,
 
-    input AES_W_in,
-    input [1:0] key_size_in,
-    input enable_AES_in,
     input [31:0] re_adder_32_in,
     input [31:0] w2_in,
     input plus1_in,
     input start,
-    input [1:0] mode_aes_in,
     input [1:0] sel_mux_res_sha_in,
     input start_sha_in,
 
@@ -50,13 +46,9 @@ module Reg2(
     output reg [31:0] rd2_out,
     output reg [31:0] imm1_out,
     output reg ecall_out,
-    output reg AES_W_out,
-    output reg [1:0] key_size_out,
-    output reg enable_AES_out,
     output reg [31:0] re_adder_32_out,
     output reg [31:0] w2_out,
     output reg plus1_out,
-    output reg [1:0] mode_aes_out,
     output reg [1:0] sel_mux_res_sha_out,
     output reg start_sha_out
 );
@@ -83,16 +75,11 @@ always @(posedge clk or negedge reset) begin
         imm1_out <= 32'b0;
         ecall_out <= 1'b0;
 
-        AES_W_out <= 1'b0;
-        key_size_out <= 2'b0;
-        enable_AES_out <= 1'b0;
         re_adder_32_out <= 32'b0;
         w2_out <= 32'b0;
         plus1_out <= 1'b0;
-        mode_aes_out <= 2'b0;
         sel_mux_res_sha_out <= 2'b0;
         start_sha_out <= 1'b0;
-
     end else if (start) begin
         // Truyền giá trị từ input vào output khi không reset
         pc_out <= pc_in;
@@ -114,13 +101,9 @@ always @(posedge clk or negedge reset) begin
         imm1_out <= imm1_in;
         ecall_out <= ecall_in;
         
-        AES_W_out <= AES_W_in;
-        key_size_out <= key_size_in;
-        enable_AES_out <= enable_AES_in;
         re_adder_32_out <= re_adder_32_in;
         w2_out <= w2_in;
         plus1_out <= plus1_in;
-        mode_aes_out <= mode_aes_in;
         sel_mux_res_sha_out <= sel_mux_res_sha_in;
         start_sha_out <= start_sha_in;
     end else begin
@@ -143,13 +126,9 @@ always @(posedge clk or negedge reset) begin
         imm1_out <= 32'b0;
         ecall_out <= 1'b0;
 
-        AES_W_out <= 1'b0;
-        key_size_out <= 2'b0;
-        enable_AES_out <= 1'b0;
         re_adder_32_out <= 32'b0;
         w2_out <= 32'b0;
         plus1_out <= 1'b0;
-        mode_aes_out <= 2'b0;
         sel_mux_res_sha_out <= 2'b0;
         start_sha_out <= 1'b0;
     end
