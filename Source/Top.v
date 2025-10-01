@@ -755,7 +755,7 @@ Buffer32 Buffer32(
 wr_b2data wr_b2data(
     .clk(clk),
     .reset(reset),
-    .result_SHA_in(res_mux_sha_o_w),
+    .result_SHA_in(res_mux_sha_o_w[255:0]),
     .enable_wb(done_Sha_w),
     // Output
     .en_w_datamem(en_w_datamem),
