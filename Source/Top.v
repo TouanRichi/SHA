@@ -10,12 +10,12 @@ module RISC_Top(
     input [31:0] DMAI_addr_in,
 	input [31:0] DMAI_data_in,
 	input [7:0] DMAI_wea_in,
-	output state_done,
-    output [255:0] res_sha256_o
+	output state_done
     // output [31:0] inst_out
 );
 
-assign res_sha256_o = res_sha256_w;
+// res_sha256_o output removed to reduce I/O pin count (was 256 pins)
+// SHA-256 result is stored internally in res_sha256_w and written to data memory via wr_b2data
 wire state_start;
 wire [31:0] pc_nextt, pc, pc_next, pc_next1, pc_next2, pc_next3;
 wire [31:0]  pc1, pc2, pc3, rd12, rd22, result_u, u_type, u_type3, u_type4;

@@ -1,5 +1,6 @@
-# SHA-256 RISC-V Co-processor Constraint File
+# SHA-256 RISC-V Co-processor Constraint File (Reduced I/O Version)
 # This file provides timing and I/O constraints for the design
+# SHA-256 output removed - result is written to data memory instead
 
 ##############################################################################
 # Clock Constraints
@@ -36,8 +37,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports DMAI_addr_in*]
 set_property IOSTANDARD LVCMOS33 [get_ports DMAI_data_in*]
 set_property IOSTANDARD LVCMOS33 [get_ports DMAI_wea_in*]
 
-# SHA-256 Result Output (256 bits)
-set_property IOSTANDARD LVCMOS33 [get_ports res_sha256_o*]
+# NOTE: res_sha256_o output has been removed to reduce I/O pin count
+# SHA-256 result is now written to data memory (addresses 0x00-0x1C)
+# This reduces total I/O from 404 pins to 148 pins
 
 ##############################################################################
 # Location Constraints (EXAMPLE - MUST BE CUSTOMIZED FOR YOUR FPGA BOARD)
@@ -58,22 +60,21 @@ set_property IOSTANDARD LVCMOS33 [get_ports res_sha256_o*]
 # set_property PACKAGE_PIN V17 [get_ports state_done]
 
 ##############################################################################
-# NOTE: IMPORTANT - I/O PIN COUNT ISSUE
+# NOTE: I/O PIN COUNT - REDUCED VERSION
 ##############################################################################
-# This design requires 404 I/O pins total:
+# This design now requires 148 I/O pins total:
 #   - 147 input pins (clk, reset, start_in, DMAD_*, DMAI_*)
-#   - 257 output pins (state_done, res_sha256_o[255:0])
+#   - 1 output pin (state_done)
 #
-# Your current FPGA has only 328 available I/O sites.
+# SHA-256 result (256 bits) is written to data memory instead of output port
+# This reduces I/O count from 404 pins to 148 pins - fits most FPGAs!
 #
-# SOLUTIONS:
-# 1. Use a larger FPGA with more I/O pins (e.g., XC7A200T instead of XC7A100T)
-# 2. Use Block RAM (BRAM) for memories instead of external connections:
-#    - Remove DMAD_* and DMAI_* external connections
+# FURTHER REDUCTIONS (if still needed):
+# 1. Use Block RAM (BRAM) for memories instead of external connections:
+#    - Remove DMAD_* and DMAI_* external connections (144 pins)
 #    - Instantiate Block RAM IP cores for instruction and data memory
-#    - This reduces I/O count by 144 pins (72 inputs)
-# 3. Reduce res_sha256_o width if partial results are acceptable
-# 4. Use serial interfaces (SPI, UART) instead of parallel I/O for data transfer
+#    - Final I/O count: 4 pins (clk, reset, start_in, state_done)
+# 2. Use serial interfaces (SPI, UART) for memory programming
 #
 ##############################################################################
 

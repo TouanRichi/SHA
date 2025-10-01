@@ -4,34 +4,91 @@
 
 This directory contains constraint files (XDC) for synthesizing and implementing the SHA-256 RISC-V co-processor design on Xilinx FPGAs.
 
+## ✅ RESOLVED: I/O Pin Count Issue
+
+**The `res_sha256_o[255:0]` output has been removed to resolve the I/O placement error!**
+
+The SHA-256 result is now written directly to data memory (addresses 0x00-0x1C) instead of being exposed as an external output port. This reduces the I/O pin count from 404 to 148 pins.
+
 ## Files
 
-### 1. `RISC_Top.xdc` (Default Constraint File)
-- **Purpose**: Basic constraint file for the current design
-- **I/O Count**: 404 pins (147 inputs + 257 outputs)
-- **Status**: ⚠️ Will NOT fit on FPGAs with < 404 I/O pins
-- **Use Case**: Reference only - requires large FPGA or design modification
+### 1. `RISC_Top.xdc` (Updated - Recommended)
+- **Purpose**: Constraint file for the reduced I/O design
+- **I/O Count**: 148 pins (147 inputs + 1 output)
+  - Inputs: clk, reset, start_in, DMAD_* (72 pins), DMAI_* (72 pins)
+  - Output: state_done
+- **Status**: ✅ Fits on most FPGAs (XC7A35T and larger)
+- **Use Case**: Default configuration
 
-### 2. `RISC_Top_BRAM.xdc` (Recommended)
+### 2. `RISC_Top_BRAM.xdc` (Optional - Minimal I/O)
 - **Purpose**: Constraint file assuming Block RAM usage for memories
-- **I/O Count**: 260 pins (4 control + 256 SHA output)
-- **Status**: ✅ Fits on medium-sized FPGAs (e.g., XC7A100T with 300+ I/O)
-- **Use Case**: Recommended approach using internal BRAM
+- **I/O Count**: 4 pins (clk, reset, start_in, state_done)
+- **Status**: ✅ Fits on any FPGA
+- **Use Case**: Minimal I/O configuration using internal BRAM
 
-## Current Issue
+## Previous Issue (RESOLVED) ✅
 
-Your implementation error occurs because:
+The implementation error occurred because:
 ```
-Number of unplaced terminals: 349
+Number of unplaced terminals: 349 (with res_sha256_o output)
 Number of available sites: 328
 Result: CANNOT FIT ❌
 ```
 
-## Solutions
+**Solution Applied**: Removed `res_sha256_o[255:0]` output port (256 pins)
+- Old I/O count: 404 pins
+- New I/O count: 148 pins  
+- Reduction: 256 pins (63%)
 
-### Solution 1: Use Block RAM (RECOMMENDED) ⭐
+## Design Changes
 
-**Modify the design to use internal Block RAM instead of external memory interfaces:**
+The following changes were made to reduce I/O pins:
+
+1. **Top.v**: Removed `output [255:0] res_sha256_o` port
+2. **Top.v**: Removed `assign res_sha256_o = res_sha256_w;` assignment
+3. **Top_tb.v**: Updated testbench to read SHA result from data memory
+4. **Internal operation**: SHA-256 result is still computed correctly and written to data memory via `wr_b2data` module
+
+## How to Access SHA-256 Result
+
+Since `res_sha256_o` has been removed, the SHA-256 result is accessed through data memory:
+
+### In Hardware:
+- Read data memory addresses 0x00 through 0x1C (8 words × 32 bits = 256 bits)
+- Word 0 (addr 0x00): SHA-256[255:224]
+- Word 1 (addr 0x04): SHA-256[223:192]
+- ...
+- Word 7 (addr 0x1C): SHA-256[31:0]
+
+### In Testbench:
+```verilog
+always @(posedge state_done) begin
+    $display("SHA256 result stored in data memory:");
+    $display("%08h %08h %08h %08h %08h %08h %08h %08h", 
+             Data_RAM[0][31:0], Data_RAM[1][31:0], Data_RAM[2][31:0], Data_RAM[3][31:0],
+             Data_RAM[4][31:0], Data_RAM[5][31:0], Data_RAM[6][31:0], Data_RAM[7][31:0]);
+end
+```
+
+## Further Optimization (Optional)
+     - Port A Width: 32 bits
+     - Port A Depth: 4096 (or as needed)
+     - Initialize with your program binary (.coe file)
+   - Create `data_mem` (Data Memory)
+     - Memory Type: Single Port RAM
+     - Port A Width: 32 bits
+     - Port A Depth: 4096 (or as needed)
+
+3. **Instantiate Block RAM** in `Top.v` instead of external ports
+
+4. **Result**: I/O count reduces to ~260 pins (fits most FPGAs)
+
+
+If you still need to reduce I/O further (e.g., to use Block RAM for memories):
+
+### Use Block RAM for Memories
+
+**Reduce I/O from 148 pins to 4 pins by using internal Block RAM:**
 
 1. **Remove external memory ports** from `Top.v`:
    ```verilog
@@ -56,57 +113,14 @@ Result: CANNOT FIT ❌
      - Port A Width: 32 bits
      - Port A Depth: 4096 (or as needed)
 
-3. **Instantiate Block RAM** in `Top.v` instead of external ports
-
-4. **Result**: I/O count reduces to ~260 pins (fits most FPGAs)
-
-### Solution 2: Use Larger FPGA
-
-**Select an FPGA with more I/O pins:**
-
-| FPGA Part Number | Available I/O | Will Fit? |
-|------------------|---------------|-----------|
-| XC7A35T          | 250           | ❌ No     |
-| XC7A50T          | 250           | ❌ No     |
-| XC7A100T         | 300           | ❌ No     |
-| XC7A200T         | 500           | ✅ Yes    |
-| XC7K325T         | 500           | ✅ Yes    |
-
-**To change FPGA in Vivado:**
-1. Tools → Settings → Project Settings → General
-2. Change "Part" to a larger FPGA (e.g., XC7A200T)
-3. Re-run synthesis and implementation
-
-### Solution 3: Reduce SHA Output Width
-
-**If you don't need all 256 bits of SHA output externally:**
-
-1. **Option A**: Output only 32 bits (hash verification)
-   ```verilog
-   output [31:0] res_sha256_o  // Instead of [255:0]
-   ```
-   Saves: 224 I/O pins
-
-2. **Option B**: Use serial output (32-bit bus, 8 clock cycles)
-   ```verilog
-   output [31:0] res_sha256_o
-   output [2:0] word_select
-   ```
-   Saves: 221 I/O pins
-
-### Solution 4: Minimal I/O Design (4 pins only)
-
-**For the absolute minimal design:**
-- Use Block RAM for memories (Solution 1)
-- Use serial/minimal output (Solution 3)
-- Final I/O count: 4 pins (clk, reset, start_in, state_done)
+3. **Result**: Final I/O count = 4 pins (clk, reset, start_in, state_done)
 
 ## How to Use Constraint Files
 
 ### In Vivado GUI:
 1. Open your Vivado project
 2. Click "Add Sources" → "Add or Create Constraints"
-3. Add the appropriate `.xdc` file (`RISC_Top.xdc` or `RISC_Top_BRAM.xdc`)
+3. Add `RISC_Top.xdc` (or `RISC_Top_BRAM.xdc` if using Block RAM)
 4. Customize pin locations for your specific FPGA board
 5. Run synthesis and implementation
 
