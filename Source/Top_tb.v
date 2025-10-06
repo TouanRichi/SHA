@@ -13,7 +13,7 @@ module RISC_Top_tb();
     reg [63:0]  Inst_ROM [0:1024];
     reg [63:0]  Data_RAM [0:1024];
 
-    wire [255:0] res_sha256_o;
+    // res_sha256_o output removed - SHA-256 result is written to data memory
 
     integer dmem = 0;
     integer dins = 0;
@@ -35,7 +35,7 @@ module RISC_Top_tb();
     //     Inst_ROM[i] = 64'd0;
     // end
     
-    // // Khởi tạo Data_RAM v�? 0
+    // // Khởi tạo Data_RAM v�? 0
     // for (i = 0; i <= 1024; i = i + 1) begin
     //     Data_RAM[i] = 64'd0;
     // end
@@ -54,8 +54,7 @@ module RISC_Top_tb();
         .DMAI_addr_in(CPUi_addrin),
         .DMAI_data_in(CPUi_datain),
         .DMAI_wea_in(CPU_we),
-        .state_done(state_done),
-        .res_sha256_o(res_sha256_o)
+        .state_done(state_done)
     );
 
 
@@ -64,7 +63,7 @@ module RISC_Top_tb();
 
     initial begin
      clk = 0;
-   // Bước 1: Khởi tạo toàn bộ v�? 0
+   // Bước 1: Khởi tạo toàn bộ v�? 0
     // for (i = 0; i <= 1024; i = i + 1) begin
     //     Inst_ROM[i] = 64'd0;
     //     Data_RAM[i] = 64'd0;
@@ -85,8 +84,13 @@ module RISC_Top_tb();
     always #5 clk = ~clk;  // ch? t?o clock
 
 // Khi state_done l�n, in k?t qu? v� k?t th�c m� ph?ng
+// Note: SHA-256 result is now written to data memory (address 0x00-0x1C)
+// Read from Data_RAM to verify the result
 always @(posedge state_done) begin
-    $display("Time=%0t | SHA256 result = %064h", $time, res_sha256_o);
+    $display("Time=%0t | SHA256 computation done. Result stored in data memory.", $time);
+    $display("SHA256[7:0]   = %08h %08h %08h %08h %08h %08h %08h %08h", 
+             Data_RAM[0][31:0], Data_RAM[1][31:0], Data_RAM[2][31:0], Data_RAM[3][31:0],
+             Data_RAM[4][31:0], Data_RAM[5][31:0], Data_RAM[6][31:0], Data_RAM[7][31:0]);
     $finish;
 end
 

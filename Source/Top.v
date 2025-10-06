@@ -10,12 +10,12 @@ module RISC_Top(
     input [31:0] DMAI_addr_in,
 	input [31:0] DMAI_data_in,
 	input [7:0] DMAI_wea_in,
-	output state_done,
-    output [255:0] res_sha256_o
+	output state_done
     // output [31:0] inst_out
 );
 
-assign res_sha256_o = res_sha256_w;
+// res_sha256_o output removed to reduce I/O pin count (was 256 pins)
+// SHA-256 result is stored internally in res_sha256_w and written to data memory via wr_b2data
 wire state_start;
 wire [31:0] pc_nextt, pc, pc_next, pc_next1, pc_next2, pc_next3;
 wire [31:0]  pc1, pc2, pc3, rd12, rd22, result_u, u_type, u_type3, u_type4;
@@ -61,18 +61,9 @@ wire [31:0] out0, out1, out2, out3, out4, out5, out6, out7, out8, out9,
             out110, out111, out112, out113, out114, out115, out116, out117, out118, out119,
             out120, out121, out122, out123, out124, out125, out126, out127;
 
-wire [1:0] mode_aes, mode_aes2, mode_aes3;
-wire AES_W,enable_AES;
-wire [1:0] key_size, key_size2, key_size3;
-wire AES_W2,enable_AES2;
-wire AES_W3,enable_AES3;
-
-// AES signal involve
-wire [31:0] data_aes,addr_aes;
-wire en_w_datamem; // tín hiệu này xor với en_w của datameme
-wire done_aes_w;
-wire done_AES;
-wire [127:0] result_AES;
+// SHA signal involve
+wire [31:0] data_sha256,addr_sha256;
+wire en_w_datamem;
 
     PC PC(
         .clk(clk),
@@ -158,10 +149,6 @@ Reg2 Re2 (
     .rd2_in(rd2),
     .imm1_in(imm1),
     .ecall_in(ecall),
-    .AES_W_in(AES_W),
-    .key_size_in(key_size),
-    .mode_aes_in(mode_aes),
-    .enable_AES_in(enable_AES),
     .re_adder_32_in(w3),
     .w2_in(w2),
     .plus1_in(plus1),
@@ -188,13 +175,9 @@ Reg2 Re2 (
     .rd2_out(rd22),
     .imm1_out(imm2),
     .ecall_out(ecall2),
-    .AES_W_out(AES_W2),
-    .key_size_out(key_size2),
     .re_adder_32_out(w4),
     .w2_out(w22),
     .plus1_out(plus12),
-    .mode_aes_out(mode_aes2),
-    .enable_AES_out(enable_AES2),
     .sel_mux_res_sha_out(sel_mux_res_sha_w2),
     .start_sha_out(start_sha_w2)
 );
@@ -220,10 +203,6 @@ Reg2 Re2 (
     .u_type_in(u_type),
     .ecall_in(ecall2),
     .pc_in(pc2),//
-    .AES_W_in(AES_W2),
-    .key_size_in(key_size2),
-    .mode_aes_in(mode_aes2),
-    .enable_AES_in(enable_AES2),
     .w3_in(w22),
     .plus1_in(plus12),
     .sel_mux_res_sha_in(sel_mux_res_sha_w2),
@@ -248,10 +227,6 @@ Reg2 Re2 (
     .u_type_out(u_type3),
     .ecall_out(ecall3),
     .pc_out(pc3),
-    .AES_W_out(AES_W3),
-    .key_size_out(key_size3),
-    .mode_aes_out(mode_aes3),
-    .enable_AES_out(enable_AES3),
     .w3_out(w23),
     .plus1_out(plus13),
     .sel_mux_res_sha_out(sel_mux_res_sha_w3),
@@ -313,10 +288,6 @@ ControlUnit CU(
     .plus1(plus1),
     .load_temp(load_temp),
 
-    .AES_W(AES_W),
-    .key_size(key_size),
-    .mode_aes(mode_aes),
-    .enable_AES(enable_AES),
     .sel_mux_res_sha(sel_mux_res_sha_w),
     .start_sha(start_sha_w)
     
@@ -784,26 +755,26 @@ Buffer32 Buffer32(
 wr_b2data wr_b2data(
     .clk(clk),
     .reset(reset),
-    .result_SHA_in(res_mux_sha_o_w),
+    .result_SHA_in(res_mux_sha_o_w[255:0]),
     .enable_wb(done_Sha_w),
     // Output
     .en_w_datamem(en_w_datamem),
-    .data_aes(data_aes),
-    .addr_aes(addr_aes)
+    .data_sha256(data_sha256),
+    .addr_sha256(addr_sha256)
     
 );
 
 // ADDR
 MUX_AES1 MUX_AES1( 
     .a(w6),
-    .b(addr_aes),
+    .b(addr_sha256),
     .sel(en_w_datamem),
     .c(w7)
 );
 
 MUX_AES2 MUX_AES2(
     .a(rd23),
-    .b(data_aes),
+    .b(data_sha256),
     .sel(en_w_datamem),
     .c(rd33)
 );
@@ -906,62 +877,6 @@ state_control state_control(
 wire sel_res256_w;
 wire sel_res512_w;
 
-wire [63:0] out0_64, out1_64, out2_64, out3_64, out4_64, out5_64,
-            out6_64, out7_64;
-
-wire [63:0] out16_64, out17_64, out18_64, out19_64, out20_64,
-            out21_64, out22_64, out23_64, out24_64, out25_64,
-            out26_64, out27_64, out28_64, out29_64, out30_64,
-            out31_64, out32_64;
-
-// Giả sử out0 đến out31 đã được khai báo là wire [31:0]
-assign out0_64  = {out0,  out1};
-assign out1_64  = {out2,  out3};
-assign out2_64  = {out4,  out5};
-assign out3_64  = {out6,  out7};
-assign out4_64  = {out8,  out9};
-assign out5_64  = {out10, out11};
-assign out6_64  = {out12, out13};
-assign out7_64  = {out14, out15};
-
-assign out16_64  = {out16, out17};
-assign out17_64  = {out18, out19};
-assign out18_64 = {out20, out21};
-assign out19_64 = {out22, out23};
-assign out20_64 = {out24, out25};
-assign out21_64 = {out26, out27};
-assign out22_64 = {out28, out29};
-assign out23_64 = {out30, out31};
-assign out24_64 = {out32, out33};
-assign out25_64 = {out34, out35};
-assign out26_64 = {out36, out37};
-assign out27_64 = {out38, out39};
-assign out28_64 = {out40, out41};
-assign out29_64 = {out42, out43};
-assign out30_64 = {out44, out45};
-assign out31_64 = {out46, out47};
-assign out32_64 = {out48, out49};
-
-
-// wire [63:0] out32_64;
-// wire [63:0] out33_64;
-// wire [63:0] out34_64;
-// wire [63:0] out35_64;
-// wire [63:0] out36_64;
-// wire [63:0] out37_64;
-// wire [63:0] out38_64;
-// wire [63:0] out39_64;
-
-// assign out32_64 = {out32, out33};
-// assign out33_64 = {out34, out35};
-// assign out34_64 = {out36, out37};
-// assign out35_64 = {out38, out39};
-// assign out36_64 = {out40, out41};
-// assign out37_64 = {out42, out43};
-// assign out38_64 = {out44, out45};
-// assign out39_64 = {out46, out47};
-
-
 fsm_controller fsm_controller (
     .clk(clk),
     .rst(reset),
@@ -983,22 +898,6 @@ fsm_controller fsm_controller (
     .w13_sha256(out29),
     .w14_sha256(out30),
     .w15_sha256(out31),
-    // .w0_sha512(out16_64),
-    // .w1_sha512(out17_64),
-    // .w2_sha512(out18_64),
-    // .w3_sha512(out19_64),
-    // .w4_sha512(out20_64),
-    // .w5_sha512(out21_64),
-    // .w6_sha512(out22_64),
-    // .w7_sha512(out23_64),
-    // .w8_sha512(out24_64),
-    // .w9_sha512(out25_64),
-    // .w10_sha512(out26_64),
-    // .w11_sha512(out27_64),
-    // .w12_sha512(out28_64),
-    // .w13_sha512(out29_64),
-    // .w14_sha512(out30_64),
-    // .w15_sha512(out31_64),
 
     .A_i(out0),
     .B_i(out1),
@@ -1008,15 +907,6 @@ fsm_controller fsm_controller (
     .F_i(out5),
     .G_i(out6),
     .H_i(out7),
-
-    // .A_i2(out0_64),
-    // .B_i2(out1_64),
-    // .C_i2(out2_64),
-    // .D_i2(out3_64),
-    // .E_i2(out4_64),
-    // .F_i2(out5_64),
-    // .G_i2(out6_64),
-    // .H_i2(out7_64),
     
     .start_sha_o(start_sha_o_w),
 

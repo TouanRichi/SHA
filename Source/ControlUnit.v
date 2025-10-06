@@ -16,10 +16,6 @@ module ControlUnit(
     output reg plus1,
     output reg load_temp,
 
-    output reg AES_W,
-    output reg [1:0] key_size,
-    output reg enable_AES,
-    output reg [1:0] mode_aes,
     output reg [1:0] sel_mux_res_sha,
     output reg start_sha
 );
@@ -40,10 +36,6 @@ module ControlUnit(
                 ecall = 0;
 				load_temp = 0;
             plus1 = 0;
-            AES_W = 0;
-            key_size = 2'd0;
-            enable_AES = 0;
-            mode_aes = 2'd0;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
             
@@ -63,10 +55,6 @@ module ControlUnit(
                 ecall = 0;
 				load_temp = 0;
             plus1 = 0;
-            AES_W = 0;
-            key_size = 2'd0;
-            enable_AES = 0;
-            mode_aes = 2'd0;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
             
@@ -86,10 +74,6 @@ module ControlUnit(
                 ecall = 0;
 				load_temp = 0;
                 plus1 = 0;
-                AES_W = 0;
-                key_size = 2'd0;
-                enable_AES = 0;
-                mode_aes = 2'd0;
                 sel_mux_res_sha = 2'b00;
                 start_sha = 1'b0;
             
@@ -109,10 +93,6 @@ module ControlUnit(
                 ecall = 0;
 				load_temp = 0;
                 plus1 = 0;
-                AES_W = 0;
-                key_size = 2'd0;
-                enable_AES = 0;
-                mode_aes = 2'd0;
                 sel_mux_res_sha = 2'b00;
                 start_sha = 1'b0;
             
@@ -133,10 +113,6 @@ module ControlUnit(
                 ecall = 0;
 				load_temp = 0;
                 plus1 = 0;
-                AES_W = 0;
-                key_size = 2'd0;
-                enable_AES = 0;
-                mode_aes = 2'd0;
                 sel_mux_res_sha = 2'b00;
                 start_sha = 1'b0;
             
@@ -157,10 +133,6 @@ module ControlUnit(
                 ecall = 0;
 				load_temp = 0;
                 plus1 = 0;
-                AES_W = 0;
-                key_size = 2'd0;
-                enable_AES = 0;
-                mode_aes = 2'd0;
                 sel_mux_res_sha = 2'b00;
                 start_sha = 1'b0;
            
@@ -181,10 +153,6 @@ module ControlUnit(
                 ecall = 0;
 				load_temp = 0;
                 plus1 = 0;
-                AES_W = 0;
-                key_size = 2'd0;
-                enable_AES = 0;
-                mode_aes = 2'd0;
                 sel_mux_res_sha = 2'b00;
                 start_sha = 1'b0;
                 
@@ -205,10 +173,6 @@ module ControlUnit(
                  ecall = 0;
 				 load_temp = 0;
                 plus1 = 0;
-                AES_W = 0;
-                key_size = 2'd0;
-                enable_AES = 0;
-                mode_aes = 2'd0;
                 sel_mux_res_sha = 2'b00;
                 start_sha = 1'b0;
             
@@ -228,10 +192,6 @@ module ControlUnit(
                  ecall = 0;
 				 load_temp = 0;
                 plus1 = 0;
-                AES_W = 0;
-                key_size = 2'd0;
-                enable_AES = 0;
-                mode_aes = 2'd0;
                 sel_mux_res_sha = 2'b00;
                 start_sha = 1'b0;
             
@@ -251,10 +211,6 @@ module ControlUnit(
                  ecall = 1;
 				 load_temp = 0;
                 plus1 = 0;
-                AES_W = 0;
-                key_size = 2'd0;
-                enable_AES = 0;
-                mode_aes = 2'd0;
                 sel_mux_res_sha = 2'b00;
                 start_sha = 1'b0;
             
@@ -278,10 +234,6 @@ module ControlUnit(
             ecall = 0;
             load_temp = 1;
             plus1 = 0;
-            AES_W = 0;
-            key_size = 2'd0;
-            enable_AES = 0;  
-            mode_aes = 2'd0;      
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end 
@@ -300,10 +252,6 @@ module ControlUnit(
             ecall = 0;
             load_temp = 0;
             plus1 = 1;
-            AES_W = 0;
-            key_size = 2'd0;
-            enable_AES = 0;
-            mode_aes = 2'd0;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end 
@@ -327,10 +275,6 @@ module ControlUnit(
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd0;
-            enable_AES = 1;
-            mode_aes = 2'd0;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b1;
 
@@ -351,10 +295,6 @@ module ControlUnit(
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd0;
-            enable_AES = 1;
-            mode_aes = 2'd1;
             sel_mux_res_sha = 2'b01;
             start_sha = 1'b1;
         end
@@ -374,10 +314,6 @@ module ControlUnit(
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd0;
-            enable_AES = 1;
-            mode_aes = 2'd2;
             sel_mux_res_sha = 2'b10;
             start_sha = 1'b1;
 
@@ -398,10 +334,6 @@ module ControlUnit(
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd0;
-            enable_AES = 1;
-            mode_aes = 2'd3;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end  // DONE 4 mode of Custom 1 128 bit 
@@ -421,10 +353,6 @@ module ControlUnit(
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 0;
-            key_size = 2'd0;
-            enable_AES = 0;
-            mode_aes = 2'd0;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end
@@ -448,10 +376,6 @@ end
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd1;
-            enable_AES = 1;
-            mode_aes = 2'd0;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end
@@ -471,10 +395,6 @@ end
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd1;
-            enable_AES = 1;
-            mode_aes = 2'd2;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end
@@ -494,10 +414,6 @@ end
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd1;
-            enable_AES = 1;
-            mode_aes = 2'd2;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end
@@ -517,10 +433,6 @@ end
             ecall = 0;
             load_temp = 0;
             plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd1;
-            enable_AES = 1;
-            mode_aes = 2'd3;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end
@@ -539,130 +451,12 @@ end
             ecall = 0;
 			load_temp = 0;
             plus1 = 0;
-            AES_W = 0;
-            key_size = 2'd0;
-            enable_AES = 0;
-            mode_aes = 2'd0;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
         end
          
         endcase
     end 
-    7'b1111011: begin  // custom 3
-        case(funct3)
-        3'd0: begin
-            alu_op = 3'b000;
-            branch = 0;
-            mem_read = 0;
-            mem_to_reg = 0;
-            mem_write = 0;
-            alu_src = 0;
-            reg_write = 0;
-            jalr = 0;
-            jal = 0;
-            lui = 0;
-            auipc = 0;
-            ecall = 0;
-            load_temp = 0;
-            plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd2;
-            enable_AES = 1;
-            mode_aes = 2'd0;
-            sel_mux_res_sha = 2'b00;
-            start_sha = 1'b0;
-        end
-        3'd1: begin 
-            alu_op = 3'b000;
-            branch = 0;
-            mem_read = 0;
-            mem_to_reg = 0;
-            mem_write = 0;
-            alu_src = 0;
-            reg_write = 0;
-            jalr = 0;
-            jal = 0;
-            lui = 0;
-            auipc = 0;
-            ecall = 0;
-            load_temp = 0;
-            plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd2;
-            enable_AES = 1;
-            mode_aes = 2'd1;
-            sel_mux_res_sha = 2'b00;
-            start_sha = 1'b0;
-        end
-        3'd2: begin 
-            alu_op = 3'b000;
-            branch = 0;
-            mem_read = 0;
-            mem_to_reg = 0;
-            mem_write = 0;
-            alu_src = 0;
-            reg_write = 0;
-            jalr = 0;
-            jal = 0;
-            lui = 0;
-            auipc = 0;
-            ecall = 0;
-            load_temp = 0;
-            plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd2;
-            enable_AES = 1;
-            mode_aes = 2'd2;
-            sel_mux_res_sha = 2'b00;
-            start_sha = 1'b0;
-        end
-        3'd3: begin 
-            alu_op = 3'b000;
-            branch = 0;
-            mem_read = 0;
-            mem_to_reg = 0;
-            mem_write = 0;
-            alu_src = 0;
-            reg_write = 0;
-            jalr = 0;
-            jal = 0;
-            lui = 0;
-            auipc = 0;
-            ecall = 0;
-            load_temp = 0;
-            plus1 = 0;
-            AES_W = 1;
-            key_size = 2'd2;
-            enable_AES = 1;
-            mode_aes = 2'd3;
-            sel_mux_res_sha = 2'b00;
-            start_sha = 1'b0;
-        end
-        default: begin 
-            alu_op = 3'b000;
-            branch = 0;
-            mem_read = 0;
-            mem_to_reg = 0;
-            mem_write = 0;
-            alu_src = 0;
-            reg_write = 0;
-            jalr = 0;
-            jal = 0;
-            lui = 0;
-            auipc = 0;
-            ecall = 0;
-            load_temp = 0;
-            plus1 = 0;
-            AES_W = 0;
-            key_size = 2'D0;
-            enable_AES = 0;
-            mode_aes = 2'd0;
-            sel_mux_res_sha = 2'b00;
-            start_sha = 1'b0;
-        end 
-        endcase
-    end // DONE custom 3 256 AES
 
             default: begin
                  alu_op = 3'b000;
@@ -679,10 +473,6 @@ end
                  ecall = 0;
 				 load_temp = 0;
             plus1 = 0;
-            AES_W = 0;
-            key_size = 2'd0;
-            enable_AES = 0;
-            mode_aes = 2'd0;
             sel_mux_res_sha = 2'b00;
             start_sha = 1'b0;
             end
